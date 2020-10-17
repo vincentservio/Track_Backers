@@ -1,0 +1,8 @@
+storage department= [electrical file1,2,3,4,5,6,accounting file1,2,3,4,5,6,7]
+electrical department electrical file1,2,3,4,5,6
+accounting department accounting file1,2,3,4,5,6,7
+software department    software file1,2,3,4,56,7,8
+
+worker software file10 action adding 
+...state,action.payload
+actioon =>reducer produce new state
