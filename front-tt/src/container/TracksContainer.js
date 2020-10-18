@@ -7,7 +7,6 @@ class TracksContainer extends Component {
   componentDidMount(){
     this.props.getTracks()
   }
-
   render() {
     const tracks = this.props.tracks.map((track, i)  => 
       <Tracks  key={i} title={track.title}  status={track.status} id={track.id} />
@@ -15,7 +14,6 @@ class TracksContainer extends Component {
     return (
       <div>
         <h1>TrackList</h1>
-
         <ul>
             {this.props.loading ?  <Loading/>: tracks }
         </ul>

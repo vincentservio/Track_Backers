@@ -1,13 +1,15 @@
 import React from 'react'
 import ReactPlayer from "react-player"
 
-export function Footer({instrumental,notes }) {
-
+export function Footer({instrumental,notes , link}) {
+debugger
     return (
-        <li>        {notes}
-
-        <ReactPlayer url={instrumental}/>
-        </li>
+        <div>      
+            <ReactPlayer url={instrumental}/><div className="myBox"> {notes}</div> 
+        </div>    
     )
 }
 export default Footer
+
+
+

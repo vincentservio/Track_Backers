@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -63,6 +64,9 @@ a:active {
     transform: rotate(360deg);
   }
 }
+.container > * {
+    display: inline-block;
+}
 
 
 .button {
@@ -88,6 +92,7 @@ font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    
 }
 
 
@@ -130,6 +135,7 @@ input[type=submit]:hover {
 div {
    background-color: #f2f2f2;
     padding: 20px;
+    align-items: center;
 
 }
 
@@ -161,4 +167,61 @@ th,
 td {
     padding: 5px;
     text-align: left;
+}
+
+div[id=player]{
+  background-color: #282c34;
+  min-height: 100vh;
+ 
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: right;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  display: block;
+ 
+
+
+}
+
+
+
+
+
+
+
+.myBox {
+    border: none;
+    padding: 5px;
+    font: 24px / 36px sans-serif;
+    width: 500px;
+    height: 500px;
+    overflow: scroll;
+  text-align: center;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid rgb(202, 183, 255);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: rgb(202, 183, 255)
+
+}
+
+.ytp-cued-thumbnail-overlay-image{
+align-items: center;
+
 }

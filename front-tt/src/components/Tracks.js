@@ -6,7 +6,7 @@ import React from 'react'
         <li key={id}>  
             <h2> {title} </h2>  
             <br/>
-                 {status}
+            {status}
         </li>
     )
 }
