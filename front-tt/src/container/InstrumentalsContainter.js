@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import  Footer  from '../components/Footer'
+import  Instrumentals  from '../components/Instrumentals'
 import {connect} from 'react-redux'
 import { getTracks } from '../actions/tracks'
-class ProgressContainter extends Component {
+class InstrumentalsContainer extends Component {
   componentDidMount(){
   this.props.getTracks()
   }
@@ -11,7 +11,7 @@ class ProgressContainter extends Component {
   render() {
       
     const instrumentals = this.props.instrumental.map((links, i)  => 
-      <Footer  key={i} instrumental={links.instrumental}  notes={links.notes} id={links.id} link={links} handleonClick={this.handleClick}/>
+      <Instrumentals  key={i} instrumental={links.instrumental}  notes={links.notes} id={links.id} link={links} handleonClick={this.handleClick}/>
     )
       return (
           <>
@@ -31,6 +31,6 @@ class ProgressContainter extends Component {
 
 
 
-export default connect(mapStateToProps, {getTracks})(ProgressContainter);
+export default connect(mapStateToProps, {getTracks})(InstrumentalsContainer);
 
 

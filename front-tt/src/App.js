@@ -7,7 +7,7 @@ import Home from './components/Home'
 import TracksContainer from './container/TracksContainer'
 import Nav from './components/Nav'
 import TrackForm from "./container/TrackForm"
-import ProgressContainter from './container/ProgressContainter';
+import InstrumentalsContainer from './container/InstrumentalsContainter';
  class App extends Component {
 
   render() {
@@ -17,7 +17,7 @@ import ProgressContainter from './container/ProgressContainter';
         <div className="App">             
           <Switch>          
             <Route exact path="/tracks/new"exact component={TrackForm} />                 
-            <Route exact path="/instrumentals"exact component={ProgressContainter} />
+            <Route exact path="/instrumentals"exact component={InstrumentalsContainer} />
             <Route exact path="/tracks"exact component={TracksContainer} />
             <Route exact path="/" exact component={Home}/>
           </Switch >
