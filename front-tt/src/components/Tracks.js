@@ -11,7 +11,7 @@ import React from 'react'
     )
 }
 export default Tracks
-{/* <table>
+/* <table>
                   <tbody>
                       <tr>
                     <th style={{ color: 'green' }}>Completed</th>
@@ -30,4 +30,4 @@ export default Tracks
                         <td>0</td>
                     </tr>
                 </tbody> 
-             </table> */}
+             </table> */

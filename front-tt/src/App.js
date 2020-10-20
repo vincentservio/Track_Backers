@@ -8,7 +8,6 @@ import TracksContainer from './container/TracksContainer'
 import Nav from './components/Nav'
 import TrackForm from "./container/TrackForm"
 import ProgressContainter from './container/ProgressContainter';
-import {Footer} from './components/Footer'
  class App extends Component {
 
   render() {
