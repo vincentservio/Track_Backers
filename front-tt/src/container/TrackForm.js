@@ -35,6 +35,8 @@ class TrackForm extends Component {
             status: "",
             instrumental:"",
             notes: "",
+                    status:"Unknown",
+
              loading:false
         })
     }
@@ -50,7 +52,7 @@ class TrackForm extends Component {
                     <textarea name="notes" value={this.state.notes} onChange={this.handleChange} />
                     <br/>
                     Status:
-                    <select name="status" onChange={this.handleChange}>
+                    <select name="status" value={this.state.status} onChange={this.handleChange}>
                         <option value="Unknown">Choose Status / Default "Unknown"</option>
                         <option value="Complete">Complete</option>
                         <option value="Written But Not Recorded">Written, But Not Recorded</option>

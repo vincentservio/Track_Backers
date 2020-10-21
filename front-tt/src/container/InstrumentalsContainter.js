@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import  Instrumentals  from '../components/Instrumentals'
 import {connect} from 'react-redux'
 import { getTracks } from '../actions/tracks'
+import Loading from '../components/Loading'
 class InstrumentalsContainer extends Component {
   componentDidMount(){
   this.props.getTracks()
@@ -9,22 +10,31 @@ class InstrumentalsContainer extends Component {
 
 
   render() {
-      
+         
     const instrumentals = this.props.instrumental.map((links, i)  => 
-      <Instrumentals  key={i} instrumental={links.instrumental}  notes={links.notes} id={links.id} link={links} handleonClick={this.handleClick}/>
+ 
+      <Instrumentals  key={i} instrumental={links.instrumental}  notes={links.notes}
+       id={links.id} link={links}
+        title={this.props.track.find(title => title.id === links.track_id  ).title}
+         handleonClick={this.handleClick} />
     )
+  //  const title = this.props.track.find(title => instrumentals.id === title.id )
+// debugger
       return (
+       
           <>
             {/* {tracks} */}
-            <ul>{instrumentals}</ul>
+          
+            <ul>{this.props.loading ?  <Loading/>: instrumentals}</ul>
           </>
       )
   }  
 }
  const mapStateToProps = (state) => {
   return{
-    // track: state.trackReducer.tracks.map(track => track),
-    instrumental: state.trackReducer.tracks.map(track => track.links[0])
+    track: state.trackReducer.tracks.map(track => track),
+    instrumental: state.trackReducer.tracks.map(track => track.links[0]),
+    loading: state.trackReducer.loading
   }
 }
 

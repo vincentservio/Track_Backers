@@ -18,9 +18,11 @@ import ReactPlayer from "react-player"
      
     render() {
     //   className="myBox"
-        //   debugger
+          
         return (
-            <div>               
+            <div>       
+                <h2>{this.props.title}</h2> 
+                       
                  <ReactPlayer className="p" url={this.props.instrumental}/>
 
                   <button onClick={this.handleClick}>Notes</button>
