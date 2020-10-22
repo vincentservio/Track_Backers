@@ -10,8 +10,6 @@ export const getTracks = () => {
 export const addTrack = (track) => {
 
     return (dispatch) => { 
- 
-    console.log(track)
         dispatch({type: "ADDING_TRACK"})
        fetch('http://localhost:3001/tracks', {
             method: "POST",

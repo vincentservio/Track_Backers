@@ -8,38 +8,31 @@ class InstrumentalsContainer extends Component {
   this.props.getTracks()
   }
 
-
-  render() {
-         
+  render() {     
     const instrumentals = this.props.instrumental.map((links, i)  => 
- 
-      <Instrumentals  key={i} instrumental={links.instrumental}  notes={links.notes}
-       id={links.id} link={links}
-        title={this.props.track.find(title => title.id === links.track_id  ).title}
-         handleonClick={this.handleClick} />
+      <Instrumentals 
+        key={ i } 
+        instrumental={ links.instrumental } 
+        notes={ links.notes} 
+        link={ links }
+        title={ this.props.track.find(title => title.id === links.track_id  ).title }
+      />
     )
-  //  const title = this.props.track.find(title => instrumentals.id === title.id )
-// debugger
-      return (
-       
-          <>
-            {/* {tracks} */}
-          
-            <ul>{this.props.loading ?  <Loading/>: instrumentals}</ul>
-          </>
-      )
+
+    return (
+      <>
+        <ul>{ this.props.loading ?  <Loading/>: instrumentals }</ul>
+      </>
+    )
   }  
 }
- const mapStateToProps = (state) => {
+
+const mapStateToProps = (state) => {
   return{
     track: state.trackReducer.tracks.map(track => track),
     instrumental: state.trackReducer.tracks.map(track => track.links[0]),
-    loading: state.trackReducer.loading
   }
 }
-
-
-
 
 export default connect(mapStateToProps, {getTracks})(InstrumentalsContainer);
 

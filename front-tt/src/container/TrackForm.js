@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import {connect} from 'react-redux'
-import {addTrack} from '../actions/tracks'
+import { connect } from 'react-redux'
+import { addTrack } from '../actions/tracks'
 import '../App.css';
 class TrackForm extends Component { 
     state = {
@@ -15,7 +15,7 @@ class TrackForm extends Component {
     handleChange = (event) => {
         this.setState({
             [event.target.name]: event.target.value,
-            staus: event.target.value   
+            // staus: event.target.value   
         }) 
     }
 
@@ -35,13 +35,14 @@ class TrackForm extends Component {
             status: "",
             instrumental:"",
             notes: "",
-                    status:"Unknown",
+            // status:"Unknown",
 
-             loading:false
+            loading:false
         })
     }
     render() {
         return (
+            <div>
             <form onSubmit={this.handleSubmit}>
                 <h2>Add New Track</h2>
                     Title:
@@ -62,6 +63,9 @@ class TrackForm extends Component {
                     </select>
                 <input type="submit" value="Submit Track" />
             </form>
+                             <img src='https://i.pinimg.com/originals/ab/45/bb/ab45bb4451536652faca51ae4f42d5dd.gif'  className="home-icon" alt="logo" />
+
+            </div>
         )
     }
 

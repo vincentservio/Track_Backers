@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 // import { connect } from 'react-redux'
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import { Switch} from 'react-router-dom';
 import Home from './components/Home'
 import TracksContainer from './container/TracksContainer'
 import Nav from './components/Nav'
 import TrackForm from "./container/TrackForm"
 import InstrumentalsContainer from './container/InstrumentalsContainter';
+import Footer from "./components/Footer"
  class App extends Component {
 
   render() {
@@ -16,12 +17,13 @@ import InstrumentalsContainer from './container/InstrumentalsContainter';
         <Nav/>
         <div className="App">             
           <Switch>          
-            <Route exact path="/tracks/new"exact component={TrackForm} />                 
-            <Route exact path="/instrumentals"exact component={InstrumentalsContainer} />
-            <Route exact path="/tracks"exact component={TracksContainer} />
-            <Route exact path="/" exact component={Home}/>
+            <Route path="/tracks/new" exact component={ TrackForm } />                 
+            <Route  path="/instrumentals" exact component={ InstrumentalsContainer } />
+            <Route  path="/tracks" exact component={ TracksContainer } />
+            <Route path="/" exact component={ Home }/>
           </Switch >
         </div>
+        <Footer/>
       </Router>
     )
   }
