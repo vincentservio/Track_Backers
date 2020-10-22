@@ -18,8 +18,9 @@ class InstrumentalsContainer extends Component {
         title={ this.props.track.find(title => title.id === links.track_id  ).title }
       />
     )
-
+ debugger
     return (
+     
       <>
         <ul>{ this.props.loading ?  <Loading/>: instrumentals }</ul>
       </>
@@ -34,6 +35,6 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, {getTracks})(InstrumentalsContainer);
+export default connect(mapStateToProps, { getTracks })(InstrumentalsContainer);
 
 

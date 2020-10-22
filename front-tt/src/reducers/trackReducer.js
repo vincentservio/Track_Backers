@@ -26,6 +26,6 @@ export default (state= {tracks: [], loading: false }, action) => {
                 loading: false
             }
         default:
-        return state
+            return state
     }
 }
