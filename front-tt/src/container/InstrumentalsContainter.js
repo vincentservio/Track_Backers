@@ -6,7 +6,7 @@ import Loading from '../components/Loading'
 class InstrumentalsContainer extends Component {
   componentDidMount(){
   this.props.getTracks()
-  }
+  } 
 
   render() {     
     const instrumentals = this.props.instrumental.map((links, i)  => 
@@ -18,7 +18,6 @@ class InstrumentalsContainer extends Component {
         title={ this.props.track.find(title => title.id === links.track_id  ).title }
       />
     )
- debugger
     return (
      
       <>

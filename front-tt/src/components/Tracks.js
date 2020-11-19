@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Counter from './Counter'
  function Tracks({ title, status, id }) {
 
     return (
@@ -7,6 +7,7 @@ import React from 'react'
             <h2> { title } </h2>  
             <br/>
             { status }
+            <Counter/>
         </li>
     )
 }

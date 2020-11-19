@@ -7,7 +7,7 @@ export const getTracks = () => {
         .then(tracks => dispatch({type: "TRACKS_LOADED", payload: tracks}) )
     }
 }
-export const addTrack = (track) => {
+export const addTrack = (track, history) => {
 
     return (dispatch) => { 
         dispatch({type: "ADDING_TRACK"})
@@ -19,6 +19,9 @@ export const addTrack = (track) => {
             }                                                                          
         })                  
     .then(res  => res.json()) 
-    .then(track => dispatch({type:"TRACK_ADDED", payload: track}))
+    .then(track => {
+        dispatch({type:"TRACK_ADDED", payload: track})
+        history.push('/tracks')
+    })
 } 
 }

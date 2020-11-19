@@ -29,7 +29,9 @@ class TrackForm extends Component {
                 notes: this.state.notes
             }]
         } 
-        this.props.addTrack(track)
+        this.props.addTrack(track, this.props.history)
+        // this.props.history.push("/tracks")
+        debugger
         this.setState({
             title: "",
             status: "",

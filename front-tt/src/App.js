@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-// import { connect } from 'react-redux'
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import { Switch} from 'react-router-dom';
 import Home from './components/Home'
 import TracksContainer from './container/TracksContainer'
 import Nav from './components/Nav'
@@ -18,8 +16,8 @@ import Footer from "./components/Footer"
         <div className="App">             
           <Switch>          
             <Route path="/tracks/new" exact component={ TrackForm } />                 
-            <Route  path="/instrumentals" exact component={ InstrumentalsContainer } />
-            <Route  path="/tracks" exact component={ TracksContainer } />
+            <Route path="/instrumentals" exact component={ InstrumentalsContainer } />
+            <Route path="/tracks" exact component={ TracksContainer } />
             <Route path="/" exact component={ Home }/>
           </Switch >
         </div>
