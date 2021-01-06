@@ -1,12 +1,11 @@
 .App {
   text-align: center;
-  
 }
 
 .App-logo {
-float: left;
-position: relative;
-/* margin: 0px 0px 10px 0px; */
+  float: left;
+  position: relative;
+  /* margin: 0px 0px 10px 0px; */
 
   pointer-events: none;
 }
@@ -30,31 +29,30 @@ position: relative;
 
 a:link {
   color: #61dafb;
-text-decoration: none;
-display: inblock;
-color: rgb(255, 0, 0);
-text-align: center;
-padding: 0px 60px;
-text-decoration: none;
-font-size: 20px;
-
-
+  text-decoration: none;
+  display: inblock;
+  color: rgb(165, 90, 5);
+  text-align: center;
+  padding: 0px 60px;
+  text-decoration: none;
+  font-size: 20px;
 }
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
+  color: rgb(165, 90, 5);
 }
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 a:focus {
-    text-decoration: none;
+  text-decoration: none;
 }
 a:hover,
 a:active {
-    text-decoration: none;
+  text-decoration: none;
+  color: rgb(8, 8, 7);
+  font-size: 22px;
 }
-
-
 
 @keyframes App-logo-spin {
   from {
@@ -65,149 +63,124 @@ a:active {
   }
 }
 .container > * {
-    display: inline-block;
+  display: inline-block;
 }
-
 
 .button,
 button {
-    background-color: lightgray; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-
-
+  background-color: lightgray; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 li {
-font-size: 16px;
+  font-size: 16px;
 
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-
-input[type=text],
+input[type="text"],
 select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font: 14px
-    ;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font: 14px;
 }
 textarea,
 select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-input[type=submit]{
-    width: 100%;
-    background-color: #37373a46;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+input[type="submit"] {
+  width: 100%;
+  background-color: #37373a46;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-input[type=submit]:hover,
-button:hover
-
-{
-    background-color: #000000;
-    color: white;
-
+input[type="submit"]:hover,
+button:hover {
+  background-color: #000000;
+  color: white;
 }
 
-button
-{
+button {
   color: #000000;
-    background-color: #f5f5f5;
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 33%;
-
+  background-color: #f5f5f5;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
 }
 
 div {
-   background-color: #f2f2f2;
-    padding: 20px;
-    align-items: center;
-
+  background-color: #f2f2f2;
+  padding: 20px;
+  align-items: center;
 }
 
-
-img{
-
-
+img {
 }
 
 .home-icon {
-/* border: 1px solid #ddd;
+  /* border: 1px solid #ddd;
 border-radius: 10px; */
-padding: 5px;
-width:500px;
-height: 300px;
+  padding: 5px;
+  width: 500px;
+  height: 300px;
 }
-.home-icon:hover{
-box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-
+.home-icon:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 table,
 th,
 td {
-    border: 1px solid black;
-    border-collapse: collapse;
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 th,
 td {
-    padding: 5px;
-    text-align: left;
+  padding: 5px;
+  text-align: left;
 }
 
-div[id=player]{
+div[id="player"] {
   background-color: #282c34;
   min-height: 100vh;
- 
+
   flex-direction: column;
   align-items: baseline;
   justify-content: right;
   font-size: calc(10px + 2vmin);
   color: rgb(0, 0, 0);
   display: block;
- 
-
-
 }
-
-
-
-
-
-
 
 .myBox {
   text-align: center;
@@ -226,48 +199,42 @@ div[id=player]{
 
 /* Scrollbar styles */
 ::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+  width: 12px;
+  height: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    border: 1px solid rgb(202, 183, 255);
-    border-radius: 10px;
+  border: 1px solid rgb(202, 183, 255);
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: black;
-    border-radius: 10px;
+  background: black;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: rgb(202, 183, 255)
-
+  background: rgb(202, 183, 255);
 }
 
-.ytp-cued-thumbnail-overlay-image{
-align-items: center;
-
+.ytp-cued-thumbnail-overlay-image {
+  align-items: center;
 }
-.p{
-
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 50%;
-
-
+.p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
-.footer{
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-background-color: rgb(77, 77, 77);
-color: white;
-text-align: center;
-
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(77, 77, 77);
+  color: white;
+  text-align: center;
 }
-.home{
-  display: inline-block
+.home {
+  display: inline-block;
 }
