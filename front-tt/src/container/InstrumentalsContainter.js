@@ -32,6 +32,7 @@ const mapStateToProps = (state) => {
   return {
     track: state.trackReducer.tracks.map((track) => track),
     instrumental: state.trackReducer.tracks.map((track) => track.links[0]),
+    loading: state.trackReducer.loading,
   };
 };
 

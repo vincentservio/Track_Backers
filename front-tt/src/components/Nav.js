@@ -13,7 +13,7 @@ export default class Nav extends Component {
           alt="logo"
         /> */}
         <center>
-          <Link to="/">HOME </Link>
+          <Link to="/">Home </Link>
           <Link to="/tracks/new">Addtrack </Link>
 
           <Link to="/tracks">Tracks </Link>
