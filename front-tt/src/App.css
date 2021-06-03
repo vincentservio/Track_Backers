@@ -243,3 +243,26 @@ div[id="player"] {
 .home {
   display: inline-block;
 }
+legend {
+  /* float: left; */
+  font-size: 32px;
+}
+fieldset {
+  margin-top: 40px;
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 35px;
+}
+
+fieldset h1 {
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  line-height: 1;
+  margin: -9px 0 0; /* half of font-size */
+  background: #fff;
+  padding: 0 3px;
+  font: 32px;
+  font-family: "Ubuntu", sans-serif;
+}
