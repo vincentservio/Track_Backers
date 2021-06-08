@@ -51,20 +51,27 @@ class TrackForm extends Component {
           <fieldset>
             <legend>Add New Track</legend>
             {/* <h2>Add New Track</h2> */}
-            Title:
-            <input
-              type="text"
-              name="title"
-              value={this.state.title}
-              onChange={this.handleChange}
-            />
-            Instrumental:
-            <input
-              type="text"
-              name="instrumental"
-              value={this.state.instrumental}
-              onChange={this.handleChange}
-            />
+            <fieldset className="form_field">
+              <legend className="form_title"> Title</legend>
+              <input
+                className="form_text"
+                type="text"
+                name="title"
+                value={this.state.title}
+                onChange={this.handleChange}
+              />
+            </fieldset>
+            <fieldset className="form_field">
+              <legend className="form_title"> Instrumental</legend>
+
+              <input
+                className="form_text"
+                type="text"
+                name="instrumental"
+                value={this.state.instrumental}
+                onChange={this.handleChange}
+              />
+            </fieldset>
             Notes:
             <textarea
               name="notes"

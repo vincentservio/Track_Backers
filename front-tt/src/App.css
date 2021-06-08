@@ -95,7 +95,7 @@ li {
   box-sizing: border-box;
 }
 
-input[type="text"],
+/* input[type="text"],
 select {
   width: 100%;
   padding: 12px 20px;
@@ -105,7 +105,7 @@ select {
   border-radius: 4px;
   box-sizing: border-box;
   font: 14px;
-}
+} */
 textarea,
 select {
   width: 100%;
@@ -242,6 +242,29 @@ div[id="player"] {
 }
 .home {
   display: inline-block;
+}
+.form_title {
+  text-align: left;
+}
+.form_field {
+}
+.form_text {
+  width: 100%;
+  left: 15px;
+  margin: -15px;
+  font: 26px;
+  float: left;
+  border-radius: 5px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  font-size: 36px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
 }
 legend {
   /* float: left; */
